@@ -28,16 +28,19 @@ function getMemeImage() {
                         <input type="text" name="name"className="second" />
                         
                         
-                        <button onClick={getMemeImage}>Generate Meme</button>
+            <button onClick={getMemeImage}>Generate Meme</button>
 
                    </div>
                 </label>
             </div>
 
-
+          
             <div className="image">
                 <img src={memeImage}></img>
             </div>
+           
         </div>
     )
 }
+
+//to fix : image size
