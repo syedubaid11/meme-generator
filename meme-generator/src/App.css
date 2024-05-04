@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bangers", system-ui;
+  font-weight:100;
+  font-style: normal;
+}
+
+.image{
+  height:4rem;
+  width:4rem;
+}
+
+.nav-content{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #90b08f 1.18%, #49df0e 100%);
+  font-size:1.5rem;
+}
+.heading{
+  margin-right:auto;
+  margin-left:2rem;
+}
+
+.github{
+  margin-right:1rem;
+}
+.a{
+  text-decoration: none;
+}
+
+a:link { color:black; }
+a:visited { color:black; }
+a:hover { color: black; }
+a:active { color:black; }
+
+.form{
+  display: flex;
+  justify-content: center;
+  font-size:1.5rem  ;
+}
+
+.first-Element{
+  display: flex;
+  flex-direction: column;
+
+  width:20rem;
+}
+
+.submit{
+  margin-top:2rem;
+  
+
+}
+
+.first{
+  margin-bottom: 1rem;
+}
