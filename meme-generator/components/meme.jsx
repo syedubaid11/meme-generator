@@ -2,7 +2,7 @@ import data from "./data"
 import { useState } from "react"
 export default function Meme(){
 
-const [memeImage, setMemeImage] =useState("")  
+const [memeImage, setMemeImage]=useState("")  
 
 
     
@@ -18,7 +18,7 @@ function getMemeImage() {
 
     return(
         <div className="form-container">
-            <form className="form">
+            <div className="form">
                 <label>
                     <div className="first-Element">
                         Enter Top Text: 
@@ -27,14 +27,14 @@ function getMemeImage() {
                         Enter Bottom Text:
                         <input type="text" name="name"className="second" />
                         
-                        <button onClick={getMemeImage}>Generate Meme</button>
                         
+                        <button onClick={getMemeImage}>Generate Meme</button>
 
                    </div>
                 </label>
-            </form>
+            </div>
 
-            //To fix:image not loading when button onlick is clicked//
+
             <div className="image">
                 <img src={memeImage}></img>
             </div>
