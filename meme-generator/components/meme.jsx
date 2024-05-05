@@ -28,15 +28,15 @@ function getMemeImage() {
                         <input type="text" name="name"className="second" />
                         
                         
-            <button onClick={getMemeImage}>Generate Meme</button>
+            <button onClick={getMemeImage} className="generatememe">Generate Meme</button>
 
                    </div>
                 </label>
             </div>
 
           
-            <div className="image">
-                <img src={memeImage}></img>
+            <div className="meme-container" >
+                <img src={memeImage}className="image-meme"></img>
             </div>
            
         </div>

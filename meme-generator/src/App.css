@@ -57,3 +57,21 @@ a:active { color:black; }
 .first{
   margin-bottom: 1rem;
 }
+
+.image-meme{
+  
+  height:30rem;
+  width:30rem;
+  
+}
+.meme-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:2rem;
+}
+
+.generatememe{
+  margin-top:1rem;
+  
+}
