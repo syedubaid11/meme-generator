@@ -28,9 +28,11 @@ function getMemeImage() {
 
 function handleChange(event){
     const name=event.target.name;
-    const value=event.target.value
-    console.log(value)
-    console.log(name)
+    const value=event.target.value;
+    setMemeImage(prevMeme=>({
+        ...prevMeme,
+        [name]:value
+    }))
 
 
 }
@@ -73,4 +75,4 @@ function handleChange(event){
     )
 }
 
-//to fix : image size
+//to fix : text on image
