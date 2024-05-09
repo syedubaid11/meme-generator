@@ -76,3 +76,18 @@ a:active { color:black; }
   margin-top:1.3rem;
   
 }
+
+.top-text{
+  position:absolute;
+  margin-bottom:25rem;
+  color:white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.bottom-text{
+  position:absolute;
+  margin-top:25rem;
+  color:white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
