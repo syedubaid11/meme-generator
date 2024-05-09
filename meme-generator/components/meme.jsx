@@ -4,8 +4,8 @@ export default function Meme(){
 
 const [memeImage, setMemeImage]=useState({
     randomImg:"https://i.imgflip.com/9ehk.jpg",
-    topText:"hello",
-    bottomText:"how are you "})
+    topText:"",
+    bottomText:""})
 
 
     
