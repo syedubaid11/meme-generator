@@ -2,7 +2,10 @@ import data from "./data"
 import { useState } from "react"
 export default function Meme(){
 
-const [memeImage, setMemeImage]=useState("https://i.imgflip.com/9ehk.jpg")
+const [memeImage, setMemeImage]=useState({
+    randomImage:"https://i.imgflip.com/9ehk.jpg",
+    topText:"hello",
+    bottomText:"how are you "})
 
 
     
@@ -15,7 +18,14 @@ function getMemeImage() {
         
     }
 
+function handleChange(event){
+    const name=event.target.name;
+    const value=event.target.value
+    console.log(value)
+    console.log(name)
 
+
+}
 
     return(
         <div className="form-container">
@@ -23,10 +33,18 @@ function getMemeImage() {
                 <label>
                     <div className="first-Element">
                         Enter Top Text: 
-                        <input type="text" name="name" className="first"/>
+                        <input type="text"
+                         name="topText" 
+                         className="first"
+                         value={memeImage.topText}
+                         onChange={handleChange}/>
 
                         Enter Bottom Text:
-                        <input type="text" name="name"className="second" />
+                        <input type="text"
+                         name="bottomText"
+                         className="second"
+                         value={memeImage.bottomText} 
+                         onChange={handleChange}/>
                         
                         
             <button onClick={getMemeImage} className="generatememe">Generate Meme</button>
@@ -39,8 +57,8 @@ function getMemeImage() {
             <div className="meme-container" >
 
                 <img src={memeImage}className="image-meme"></img>
-                <h1 className="top-text">Hello There</h1>
-                <h1 className="bottom-text">How are you</h1>
+                <h1 className="top-text">{memeImage.topText}</h1>
+                <h1 className="bottom-text">{memeImage.bottomText}</h1>
             </div>
            
         </div>
