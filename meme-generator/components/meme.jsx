@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function Meme(){
 
 const [memeImage, setMemeImage]=useState({
-    randomImage:"https://i.imgflip.com/9ehk.jpg",
+    randomImg:"https://i.imgflip.com/9ehk.jpg",
     topText:"hello",
     bottomText:"how are you "})
 
@@ -12,8 +12,16 @@ const [memeImage, setMemeImage]=useState({
 function getMemeImage() {
         const memesArray = data.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        setMemeImage(memesArray[randomNumber].url)
-        console.log(memeImage)
+        const urlImg=memesArray[randomNumber].url
+        console.log(urlImg)
+        setMemeImage(prevMeme => ({
+            ...prevMeme,
+             randomImg: urlImg
+        }))
+
+
+
+        
 
         
     }
@@ -56,7 +64,7 @@ function handleChange(event){
           
             <div className="meme-container" >
 
-                <img src={memeImage}className="image-meme"></img>
+                <img src={memeImage.randomImg}className="image-meme"></img>
                 <h1 className="top-text">{memeImage.topText}</h1>
                 <h1 className="bottom-text">{memeImage.bottomText}</h1>
             </div>
