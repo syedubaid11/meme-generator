@@ -60,10 +60,10 @@ a:active { color:black; }
 
 .image-meme{
   
-  height:30rem;
-  width:30rem;
-  border:none;  
-  
+  height:20rem;
+  border:none; 
+  width:20rem; 
+  max-width: 100%;
 }
 .meme-container{
   display: flex;
