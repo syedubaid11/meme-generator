@@ -79,14 +79,14 @@ a:active { color:black; }
 
 .top-text{
   position:absolute;
-  margin-bottom:20rem;
+  margin-bottom:18rem;
   color:white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
 .bottom-text{
   position:absolute;
-  margin-top:20rem;
+  margin-top:18rem;
   color:white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
